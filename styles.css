@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100;400&display=swap');
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    font-family: "Roboto", "sans-serif";
+    margin: 0;
+}
+
+header {
+    background-image: url("car-bg.jpg");
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    align-items: flex-start;
+    background-position: center center;
+    min-height: calc(100vh-102px);
+}
+
+header .content{
+    font-size: 1.5rem;
+    margin: auto;
+}
+.container{
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 1000px;
+}
+.content{
+    margin: auto;
+    font-size: 2rem;
+}
+.content p{
+    margin: auto;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.content h1{
+    color: #00c2ff;
+    margin-bottom: 0;
+    text-shadow: 0 0px 10px #00495f;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav .logo{
+    font-size: 2.5rem;
+}
+nav li a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+.selected{
+    font-weight: bold;
+}
+.highlight {
+    background-color: #00c2ff;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.highlight:hover{
+    box-shadow: 0 0px 10px #37d0ff;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+footer strong{
+    color: #00c2ff;
+}
+footer p{
+    margin: 0;
+}
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        margin: 0.5rem 0;
+    }
+}
